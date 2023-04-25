@@ -1,4 +1,5 @@
-@import "globals";
+@import "_globals";
+@import "_header";
 main {
     background-color: $color-primario;
     height: 100%;
