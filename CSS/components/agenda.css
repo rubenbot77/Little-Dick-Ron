@@ -3,9 +3,10 @@
     padding: 0;
     margin: 0;
     font-size: 62.5%;
+    --color-primario: #1D2944;
 }
 main {
-    background-color: #1D2944;
+    background-color: var(--color-primario);
     height: 100%;
     padding-bottom: 25px;
 }
