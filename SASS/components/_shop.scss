@@ -1,0 +1,35 @@
+@import "_globals.scss";
+.shop-container{
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    background-color: $color-secunario;
+    color: $color-terciario;
+    padding: 28px 0 2px 0;
+    margin-top: 40px;
+    h1{
+        font-size: 2.4rem;
+        font-family: $title;
+        margin-bottom: 28px;
+    }
+    .t-shirt-container{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding: 0px 52px;
+        overflow: hidden;
+    }
+    a{
+        text-decoration: none;
+    }
+    .buy-button{
+        font-size: 1.8rem;
+        font-family: $title;
+        color: $color-terciario;
+        background-color: $color-primario;
+        width: 162px;
+        height: 35px;
+        margin: 40px auto;
+
+    }
+}

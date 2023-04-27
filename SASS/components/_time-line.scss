@@ -1,0 +1,11 @@
+@import "_globals.scss";
+.timeline {
+    padding: 10px;
+    .timeline-title{
+        text-align: center;
+        margin: 25px 0;
+    }
+    iframe{
+        border-radius: 10px;
+    }
+}
