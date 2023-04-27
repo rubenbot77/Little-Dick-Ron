@@ -1,0 +1,35 @@
+@import "_globals.scss";
+
+main {
+    background-color: $color-primario;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.main-agenda-container{
+    width: 100%;
+    background-color: $color-terciario;
+    margin: 0 auto;
+    height: 570px;
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 28px;
+}
+.agenda-main-link{
+    text-decoration: none;
+}
+
+.read-more-button{
+    color: $color-terciario;
+    font-size: 1.8rem;
+    font-family: $title;
+    background-color: $color-secunario;
+    width: 162px;
+    height: 35px;
+    padding: 7px;
+    margin-bottom: 20px;
+}

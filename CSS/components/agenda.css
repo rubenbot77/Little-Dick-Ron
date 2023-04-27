@@ -212,16 +212,20 @@ main {
   width: min-content;
   display: -ms-grid;
   display: grid;
-  margin: 0 auto;
-  -ms-grid-columns: 100%;
-  grid-template-columns: 100%;
-  -ms-grid-rows: minmax(140px, 150px);
-  grid-template-rows: minmax(140px, 150px);
+  justify-items: center;
+  -ms-grid-columns: 100vw;
+  grid-template-columns: 100vw;
+  -ms-grid-rows: minmax(140px, 200px);
+  grid-template-rows: minmax(140px, 200px);
 }
 
 .main-container > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+}
+
+.agenda-note {
+  width: 95%;
 }
 
 .main-container :nth-child(1) {
@@ -252,4 +256,9 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.galery-container .galery-items:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }

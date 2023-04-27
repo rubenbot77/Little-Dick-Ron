@@ -1,0 +1,61 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+main {
+  background-color: #1D2944;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.main-agenda-container {
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  height: 570px;
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 28px;
+}
+
+.agenda-main-link {
+  text-decoration: none;
+}
+
+.read-more-button {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  background-color: #D22628;
+  width: 162px;
+  height: 35px;
+  padding: 7px;
+  margin-bottom: 20px;
+}
