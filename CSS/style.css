@@ -129,7 +129,7 @@ body {
           transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 830px) {
   .menu-button-container {
     display: -webkit-box;
     display: -ms-flexbox;

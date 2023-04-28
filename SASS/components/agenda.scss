@@ -13,10 +13,11 @@ main {
     margin-bottom: 5px;
 }
 .main-container{
-   width: min-content;
+   width: fit-content;
    display: grid;
+   margin: 0 auto;
    justify-items: center;
-   grid-template-columns: 100vw;
+   grid-template-columns: minmax(300px, 600px);
    grid-template-rows: minmax(140px, 210px);
 }
 .agenda-image{
@@ -47,4 +48,13 @@ main {
 }
 .galery-container .galery-items:hover{
     filter: grayscale(1);
+}
+
+@media(min-width: 540px){
+    .title-container img{
+        width: 300px;
+    }
+    .main-container{
+        grid-template-rows: minmax(140px, 310px);
+    }
 }

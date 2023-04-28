@@ -1,0 +1,6 @@
+@import "/CSS/style.css";
+@media (min-width: 700px) {
+  body {
+    display: none;
+  }
+}
