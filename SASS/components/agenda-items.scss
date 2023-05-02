@@ -40,10 +40,19 @@ body{
     font-family: $title;
     margin-bottom: 18px;
 }
+.text-container cite{
+    font-size: 1.4rem;
+}
+.text-container h2{
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 1.8rem;
+}
 .text-container p {
     font-family: $articles;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
+    margin: 40px 0;
 }
 a{
     text-decoration: none;
@@ -57,17 +66,23 @@ a{
     height: 35px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 50px;
 }
-@media(min-width: 450px){
+@media(min-width: 480px){
     .image-container{
         height: max-content;
     }
     .text-container h1 {
         font-size: 3.4rem;
     }
-    .text-container p {
+    .text-container cite {
+        font-size: 1.8rem;
+    }
+    .text-container h2{
         font-size: 2.5rem;
+    }
+    .text-container p {
+        font-size: 2.3rem;
     }
     .read-more-button{
         width: 250px;
