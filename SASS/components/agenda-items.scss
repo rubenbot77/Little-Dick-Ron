@@ -41,7 +41,12 @@ body{
     margin-bottom: 18px;
 }
 .text-container cite{
+    background-color: rgb(63, 78, 106);
     font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    padding: 6px;
 }
 .text-container h2{
     text-align: center;
@@ -52,7 +57,8 @@ body{
     font-family: $articles;
     font-size: 1.6rem;
     font-weight: 400;
-    margin: 40px 0;
+    margin: 4rem 0;
+    line-height: 1.8rem;
 }
 a{
     text-decoration: none;
@@ -83,6 +89,7 @@ a{
     }
     .text-container p {
         font-size: 2.3rem;
+        line-height: 2.5rem;
     }
     .read-more-button{
         width: 250px;
