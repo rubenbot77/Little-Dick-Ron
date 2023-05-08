@@ -280,18 +280,6 @@ body {
     border-bottom: 1px solid #D22628;
   }
 }
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #1D2944;
-}
-
 .main-container {
   width: 100vw;
   height: 100%;
@@ -342,12 +330,10 @@ body {
 .text-container cite {
   background-color: rgb(63, 78, 106);
   font-size: 1.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   text-align: center;
   border-radius: 5px;
-  padding: 6px;
+  padding: 10px;
 }
 
 .text-container h2 {
@@ -362,6 +348,13 @@ body {
   font-weight: 400;
   margin: 4rem 0;
   line-height: 1.8rem;
+}
+
+.text-container a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 a {
