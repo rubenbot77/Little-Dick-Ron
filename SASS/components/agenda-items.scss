@@ -57,6 +57,15 @@
     font-size: inherit;
     cursor: pointer;
 }
+.tiktok-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    border-radius: 10px;
+} 
 a{
     text-decoration: none;
 }

@@ -357,6 +357,20 @@ body {
   cursor: pointer;
 }
 
+.tiktok-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
 }
