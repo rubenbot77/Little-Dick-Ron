@@ -22,9 +22,15 @@ body {
   background-color: #1D2944;
 }
 
+.logo-container {
+  width: 40%;
+  height: 86px;
+  margin-bottom: 20px;
+}
+
 .logo-container .logo {
   width: 100%;
-  height: 28px;
+  height: 100%;
 }
 
 .top-nav {
@@ -43,8 +49,8 @@ body {
           justify-content: space-between;
   background: #D22628;
   color: #FFFFFF;
-  height: 46px;
-  padding: 3em;
+  height: 100px;
+  padding: 10em;
 }
 
 .menu {
@@ -56,15 +62,19 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
+  gap: 0;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
+  font-weight: bolder;
+  font-size: 6.5rem;
 }
 
 .menu > a {
   margin: 0 1rem;
   overflow: hidden;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .menu-button-container {
@@ -129,7 +139,20 @@ body {
           transform: rotate(-405deg);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .top-nav {
+    height: 46px;
+    padding: 3em;
+  }
+  .logo-container {
+    width: 60%;
+    height: 46px;
+    margin-bottom: 10px;
+  }
+  .logo-container .logo {
+    width: 100%;
+    height: 100%;
+  }
   .menu-button-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151,6 +174,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 0;
   }
   #menu-toggle ~ .menu a {
     height: 0;
@@ -193,7 +217,10 @@ body {
     border-bottom: 1px solid #D22628;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 960px) {
+  .logo-container {
+    margin-bottom: 0;
+  }
   .logo-container .logo {
     width: 300px;
     height: 90%;
@@ -308,6 +335,10 @@ main {
   padding-top: 20px;
 }
 
+.inactive {
+  display: none;
+}
+
 .main-agenda-container {
   width: 100%;
   background-color: #FFFFFF;
@@ -325,6 +356,7 @@ main {
 
 .agenda-main-link {
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .read-more-button {
@@ -338,7 +370,7 @@ main {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .title-bicolor {
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -360,6 +392,59 @@ main {
     width: 300px;
     height: 60px;
     font-size: 2.8rem;
+  }
+}
+@media (min-width: 960px) {
+  .title-bicolor img {
+    width: 350px;
+    height: 80px;
+  }
+  .main-agenda-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-agenda-container img:nth-child(1) {
+    display: none;
+  }
+  .main-agenda-container img:nth-child(2) {
+    display: block;
+    max-width: 700px;
+    height: 100%;
+  }
+  .main-agenda-container img:nth-child(3) {
+    width: 40%;
+    height: 90%;
+    margin-left: 10%;
+  }
+  .agenda-main-link {
+    position: relative;
+    top: -6%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    width: 100%;
+  }
+  .read-more-button {
+    color: #FFFFFF;
+    font-size: 3.8rem;
+    font-family: "Oswald", sans-serif;
+    background-color: #D22628;
+    width: 262px;
+    height: 65px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
   }
 }
 * {

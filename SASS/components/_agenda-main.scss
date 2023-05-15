@@ -8,6 +8,9 @@ main {
     align-items: center;
     padding-top: 20px;
 }
+.inactive{
+    display: none;
+}
 .main-agenda-container{
     width: 100%;
     background-color: $color-terciario;
@@ -21,6 +24,7 @@ main {
 }
 .agenda-main-link{
     text-decoration: none;
+    margin: 0 auto;
 }
 
 .read-more-button{
@@ -33,7 +37,7 @@ main {
     padding: 7px;
     margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px)and (max-width:959px){
     .title-bicolor{
         width: min-content;
         height: min-content;
@@ -51,5 +55,47 @@ main {
         width: 300px;
         height: 60px;
         font-size: 2.8rem;
+    }
+}
+@media (min-width: 960px) {
+    .title-bicolor img{
+        width: 350px;
+        height: 80px;
+    }
+    .main-agenda-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-agenda-container img:nth-child(1){
+        display: none;
+    }
+    .main-agenda-container img:nth-child(2){
+        display: block;
+        max-width: 700px;
+        height: 100%;
+    }
+    .main-agenda-container img:nth-child(3){
+        width: 40%;
+        height: 90%;
+        margin-left: 10%;
+    }
+    .agenda-main-link{
+        position: relative;
+        top: -6%;
+        height: min-content;
+        width: 100%;
+    }
+    .read-more-button{
+        color: $color-terciario;
+        font-size: 3.8rem;
+        font-family: $title;
+        background-color: $color-secunario;
+        width: 262px;
+        height: 65px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }

@@ -1,5 +1,8 @@
 @import "_globals.scss";
 @import "_header.scss";
+.inactive{
+    display: none;
+}
 .main-container{
     width: 100vw;
     height: 100%;
@@ -12,13 +15,14 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    width: 80%;
-    height: 164px;
-    margin: 36px 0 28px 0;
+    width: max-content;
+    height: max-content;
+    margin: 20px auto;
 }
 .image-container img {
-    width: 100%;
-    height: 100%;
+    width: 290px;
+    height: 211px;
+    
 }
 .text-container {
     color: $color-terciario;
@@ -82,9 +86,14 @@ a{
 }
 @media(min-width: 480px){
     .image-container{
+        width: max-content;
         height: max-content;
     }
-    .text-container h1 {
+    .image-container img{
+        width: 490px;
+        height: 411px;
+    }
+    .text-container .title {
         font-size: 3.4rem;
     }
     .text-container cite {
@@ -101,5 +110,38 @@ a{
         width: 250px;
         font-size: 2.5rem;
         height: 50px;
+    }
+}
+@media (min-width: 960px) {
+    .image-container {
+        margin-bottom: 50px ;
+        width: 60%;
+        height: min-content;
+    }
+    .text-container .inactive {
+        display: flex;
+        justify-content: center;
+        font-size: 4.8rem;
+        margin-top: 30px;
+    }
+    .text-container{
+        text-align: center;
+        width: 75%;
+    }
+    .text-container .title {
+        display: none;
+    }
+    .text-container h2{
+        font-size: 3rem;
+    }
+    .text-container cite{
+        width: 80%;
+        font-size: 2.3rem;
+        
+    }
+    .text-container p {
+        text-align: left;
+        font-size: 2.7rem;
+        line-height: 3.5rem;
     }
 }
