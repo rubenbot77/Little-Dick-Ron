@@ -28,6 +28,9 @@
     color: $color-terciario;
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .text-container h1 {
     text-align: center;
@@ -36,29 +39,33 @@
     margin-bottom: 18px;
 }
 .text-container cite{
-    background-color: rgb(63, 78, 106);
-    font-size: 1.4rem;
+    background-color: #3f4e6a;
+    font-size: 1.6rem;
+    line-height: 2rem;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
 }
 .text-container h2{
     text-align: center;
-    margin: 10px 0 20px 0;
     font-size: 1.8rem;
+    font-family: $title;
+    font-style: italic;
+    font-weight: 100;
 }
 .text-container p {
     font-family: $articles;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     margin: 4rem 0;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
 }
 .text-container a {
-    color: $color-terciario;
+    color: #6a86f5;
     text-decoration: underline;
     font-size: inherit;
+    font-weight: bolder;
     cursor: pointer;
 }
 .tiktok-container {
@@ -84,7 +91,7 @@ a{
     margin-bottom: 20px;
     margin-top: 50px;
 }
-@media(min-width: 480px){
+@media(min-width: 760px){
     .image-container{
         width: max-content;
         height: max-content;
@@ -97,14 +104,14 @@ a{
         font-size: 3.4rem;
     }
     .text-container cite {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .text-container h2{
         font-size: 2.5rem;
     }
     .text-container p {
         font-size: 2.3rem;
-        line-height: 2.5rem;
+        line-height: 3rem;
     }
     .read-more-button{
         width: 250px;
@@ -115,8 +122,12 @@ a{
 @media (min-width: 960px) {
     .image-container {
         margin-bottom: 50px ;
-        width: 60%;
+        width: 80%;
         height: min-content;
+    }
+    .image-container img{
+        width: 642px;
+        height: 411px;
     }
     .text-container .inactive {
         display: flex;
@@ -132,7 +143,7 @@ a{
         display: none;
     }
     .text-container h2{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .text-container cite{
         width: 80%;

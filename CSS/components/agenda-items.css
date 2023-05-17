@@ -23,7 +23,7 @@ body {
 }
 
 .logo-container {
-  width: 40%;
+  width: 27%;
   height: 86px;
   margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ body {
   background: #D22628;
   color: #FFFFFF;
   height: 100px;
-  padding: 10em;
+  padding: 1rem;
 }
 
 .menu {
@@ -62,12 +62,27 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
-  gap: 0;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: bolder;
   font-size: 6.5rem;
+}
+
+.donate {
+  background: #1D2944;
+}
+
+.menu li {
+  padding: 12px;
+}
+
+.menu li:hover {
+  background-color: #751e1e;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
 }
 
 .menu > a {
@@ -145,13 +160,13 @@ body {
     padding: 3em;
   }
   .logo-container {
-    width: 60%;
-    height: 46px;
+    width: 45%;
+    height: 28px;
     margin-bottom: 10px;
   }
   .logo-container .logo {
     width: 100%;
-    height: 100%;
+    height: 28px;
   }
   .menu-button-container {
     display: -webkit-box;
@@ -176,6 +191,13 @@ body {
             align-items: center;
     gap: 0;
   }
+  .menu li:hover {
+    background-color: #D22628;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
   #menu-toggle ~ .menu a {
     height: 0;
     width: 120px;
@@ -188,7 +210,7 @@ body {
   }
   #menu-toggle:checked ~ .menu a {
     border: none;
-    height: 32px;
+    height: 45px;
     width: 120px;
     font-size: 2.4rem;
     padding: 5px;
@@ -244,12 +266,20 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 75%;
+    gap: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu li:hover {
+    background-color: #D22628;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
   .menu-button {
     width: 50px;
@@ -353,6 +383,14 @@ body {
   color: #FFFFFF;
   width: 80%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
 }
 
 .text-container h1 {
@@ -363,32 +401,36 @@ body {
 }
 
 .text-container cite {
-  background-color: rgb(63, 78, 106);
-  font-size: 1.4rem;
+  background-color: #3f4e6a;
+  font-size: 1.6rem;
+  line-height: 2rem;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .text-container h2 {
   text-align: center;
-  margin: 10px 0 20px 0;
   font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .text-container p {
   font-family: "Zilla Slab", serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 4rem 0;
-  line-height: 1.8rem;
+  line-height: 2.5rem;
 }
 
 .text-container a {
-  color: #FFFFFF;
+  color: #6a86f5;
   text-decoration: underline;
   font-size: inherit;
+  font-weight: bolder;
   cursor: pointer;
 }
 
@@ -422,7 +464,7 @@ a {
   margin-top: 50px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 760px) {
   .image-container {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -439,14 +481,14 @@ a {
     font-size: 3.4rem;
   }
   .text-container cite {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .text-container h2 {
     font-size: 2.5rem;
   }
   .text-container p {
     font-size: 2.3rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
   .read-more-button {
     width: 250px;
@@ -457,10 +499,14 @@ a {
 @media (min-width: 960px) {
   .image-container {
     margin-bottom: 50px;
-    width: 60%;
+    width: 80%;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
+  }
+  .image-container img {
+    width: 642px;
+    height: 411px;
   }
   .text-container .inactive {
     display: -webkit-box;
@@ -480,7 +526,7 @@ a {
     display: none;
   }
   .text-container h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .text-container cite {
     width: 80%;

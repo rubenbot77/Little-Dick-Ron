@@ -18,10 +18,10 @@ main {
    margin: 0 auto;
    justify-items: center;
    grid-template-columns: minmax(300px, 600px);
-   grid-template-rows: minmax(140px, 210px);
+   grid-template-rows: minmax(140px, 220px);
 }
 .agenda-image{
-    width: 95%
+    width: 95%;
 }
 .agenda-note{
     width: 95%;
@@ -44,7 +44,7 @@ main {
     min-height: none;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:fill
 }
 .galery-container .galery-items:hover{
     filter: grayscale(1);
@@ -73,13 +73,14 @@ main {
     }
     .main-container {
         margin: 0;
-        width: 45%;
+        width: 50%;
+        margin-left: 40px;
     }
     .galery-container{
         gap: 20px;
         width: 45%;
-        grid-template-columns: repeat(3, minmax(50px, 300px));
-        grid-template-rows:repeat(5, min-width(10px))
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows:repeat(5, minmax(100px, 1fr))
     }
     .galery-container .galery-items {
         min-width: none;

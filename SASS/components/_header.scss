@@ -1,6 +1,6 @@
 @import "_globals.scss";
 .logo-container {
-  width: 40%;
+  width: 27%;
   height: 86px;
   margin-bottom: 20px;
 }
@@ -16,27 +16,39 @@
   background: $color-secunario;
   color: $color-terciario;
   height: 100px;
-  padding: 10em;
+  padding: 1rem;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  gap: 0;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   font-family: $title;
   font-weight: bolder;
   font-size: 6.5rem;
 }
-
+.donate{
+  background: $color-primario;
+}
+.menu li {
+  padding: 12px;
+}
+.menu li:hover{
+  background-color: #751e1e;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
+}
 .menu > a {
   margin: 0 1rem;
   overflow: hidden;
   text-decoration: none;
   color: $color-terciario;
 }
+
 
 .menu-button-container {
   display: none;
@@ -94,13 +106,13 @@
     padding: 3em;
   }
   .logo-container {
-    width: 60%;
-    height: 46px;
+    width: 45%;
+    height: 28px;
     margin-bottom: 10px;
   }
   .logo-container .logo{
     width: 100%;
-    height: 100%;
+    height: 28px;
   }
   .menu-button-container {
     display: flex;
@@ -116,6 +128,13 @@
     align-items: center;
     gap: 0;
   }
+  .menu li:hover{
+    background-color: $color-secunario;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
   #menu-toggle ~ .menu a{
     height: 0;
     width: 120px;
@@ -127,7 +146,7 @@
   }
   #menu-toggle:checked ~ .menu a {
     border: none;
-    height: 32px;
+    height: 45px;
     width: 120px;
     font-size: 2.4rem;
     padding: 5px;
@@ -173,8 +192,16 @@
     left: 50%;
     flex-direction: column;
     width: 75%;
+    gap: 0;
     justify-content: center;
     align-items: center;
+  }
+  .menu li:hover{
+    background-color: $color-secunario;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
   .menu-button{
     width: 50px;

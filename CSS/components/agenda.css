@@ -23,7 +23,7 @@ body {
 }
 
 .logo-container {
-  width: 40%;
+  width: 27%;
   height: 86px;
   margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ body {
   background: #D22628;
   color: #FFFFFF;
   height: 100px;
-  padding: 10em;
+  padding: 1rem;
 }
 
 .menu {
@@ -62,12 +62,27 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
-  gap: 0;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: bolder;
   font-size: 6.5rem;
+}
+
+.donate {
+  background: #1D2944;
+}
+
+.menu li {
+  padding: 12px;
+}
+
+.menu li:hover {
+  background-color: #751e1e;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
 }
 
 .menu > a {
@@ -145,13 +160,13 @@ body {
     padding: 3em;
   }
   .logo-container {
-    width: 60%;
-    height: 46px;
+    width: 45%;
+    height: 28px;
     margin-bottom: 10px;
   }
   .logo-container .logo {
     width: 100%;
-    height: 100%;
+    height: 28px;
   }
   .menu-button-container {
     display: -webkit-box;
@@ -176,6 +191,13 @@ body {
             align-items: center;
     gap: 0;
   }
+  .menu li:hover {
+    background-color: #D22628;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
   #menu-toggle ~ .menu a {
     height: 0;
     width: 120px;
@@ -188,7 +210,7 @@ body {
   }
   #menu-toggle:checked ~ .menu a {
     border: none;
-    height: 32px;
+    height: 45px;
     width: 120px;
     font-size: 2.4rem;
     padding: 5px;
@@ -244,12 +266,20 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 75%;
+    gap: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu li:hover {
+    background-color: #D22628;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
   .menu-button {
     width: 50px;
@@ -337,8 +367,8 @@ main {
   justify-items: center;
   -ms-grid-columns: minmax(300px, 600px);
   grid-template-columns: minmax(300px, 600px);
-  -ms-grid-rows: minmax(140px, 210px);
-  grid-template-rows: minmax(140px, 210px);
+  -ms-grid-rows: minmax(140px, 220px);
+  grid-template-rows: minmax(140px, 220px);
 }
 
 .main-container > *:nth-child(1) {
@@ -375,8 +405,8 @@ main {
   min-height: none;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .galery-container .galery-items:hover {
@@ -411,15 +441,16 @@ main {
   }
   .main-container {
     margin: 0;
-    width: 45%;
+    width: 50%;
+    margin-left: 40px;
   }
   .galery-container {
     gap: 20px;
     width: 45%;
-    -ms-grid-columns: minmax(50px, 300px) 20px minmax(50px, 300px) 20px minmax(50px, 300px);
-    grid-template-columns: repeat(3, minmax(50px, 300px));
-    -ms-grid-rows: min-width(10px) 20px min-width(10px) 20px min-width(10px) 20px min-width(10px) 20px min-width(10px);
-    grid-template-rows: repeat(5, min-width(10px));
+    -ms-grid-columns: minmax(100px, 1fr) 20px minmax(100px, 1fr) 20px minmax(100px, 1fr);
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    -ms-grid-rows: minmax(100px, 1fr) 20px minmax(100px, 1fr) 20px minmax(100px, 1fr) 20px minmax(100px, 1fr) 20px minmax(100px, 1fr);
+    grid-template-rows: repeat(5, minmax(100px, 1fr));
   }
   .galery-container > *:nth-child(1) {
     -ms-grid-row: 1;

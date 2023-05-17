@@ -1,8 +1,17 @@
 .shop-container
-    h1 SHOP 
-    .t-shirt-container 
-        img(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-        img(src="https://i.postimg.cc/Kvrqct2w/tshirtB.png", alt="")
-        img(src="https://i.postimg.cc/jSx8DCq5/tshirtC.png", alt="")
-    a(href="")  
-        .buy-button Buy Here 
+    .carousel
+        button.carousel__button--left.carousel__button &#10094;        
+        .carousel__track-container
+            ul.carousel__track
+                li.carousel__slide 
+                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
+                li.carousel__slide
+                    img.carousel__image(src="https://i.postimg.cc/Kvrqct2w/tshirtB.png", alt="") 
+                li.carousel__slide
+                    img.carousel__image(src="https://i.postimg.cc/jSx8DCq5/tshirtC.png", alt="") 
+        button.carousel__button--rigth.carousel__button &#10095;
+
+        .carousel__nav 
+            button.carousel__indicator 
+            button.carousel__indicator 
+            button.carousel__indicator

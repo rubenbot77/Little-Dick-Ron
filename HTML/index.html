@@ -24,23 +24,36 @@
     <ul class="menu"><a href=""> 
         <li>About</li></a><a href="/HTML/index.html#agenda-main"> 
         <li>Agenda</li></a><a href="">    
-        <li>Donate</li></a><a href="">    
         <li>Take Action</li></a><a href=""> 
-        <li>Shop</li></a></ul>
+        <li>Shop</li></a><a class="donate" href="">    
+        <li>Donate</li></a></ul>
   </nav>
-  <section id="homepage"> </section>
+  <section id="homepage"></section>
   <section id="agenda-main"> <!DOCTYPE html>
     <main> 
       <div class="title-bicolor"><img src="/assets/icons/fascist-agenda.svg" alt=""></div>
       <div class="main-agenda-container"> <img src="https://i.postimg.cc/434rRBHW/fascist-agenda-main.png" alt=""><img class="inactive" src="/assets/images/Rectangle 9.png" alt=""><img src="/assets/images/agenda-main.svg" alt=""><a class="agenda-main-link" href="/HTML/components/agenda.html">
-          <div class="read-more-button">Read More+ </div></a></div>
+          <div class="read-more-button">Read More+</div></a></div>
     </main>
   </section>
   <section id="shop">
     <div class="shop-container">
-      <h1>SHOP </h1>
-      <div class="t-shirt-container"> <img src="https://i.postimg.cc/mk7dHHFc/tshirtA.png" alt=""><img src="https://i.postimg.cc/Kvrqct2w/tshirtB.png" alt=""><img src="https://i.postimg.cc/jSx8DCq5/tshirtC.png" alt=""></div><a href=""> 
-        <div class="buy-button">Buy Here </div></a>
+      <div class="carousel">
+        <button class="carousel__button--left carousel__button">&#10094;        </button>
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide"> <img class="carousel__image" src="https://i.postimg.cc/mk7dHHFc/tshirtA.png" alt=""></li>
+            <li class="carousel__slide"><img class="carousel__image" src="https://i.postimg.cc/Kvrqct2w/tshirtB.png" alt=""></li>
+            <li class="carousel__slide"><img class="carousel__image" src="https://i.postimg.cc/jSx8DCq5/tshirtC.png" alt=""></li>
+          </ul>
+        </div>
+        <button class="carousel__button--rigth carousel__button">&#10095;</button>
+        <div class="carousel__nav"> 
+          <button class="carousel__indicator"> </button>
+          <button class="carousel__indicator"> </button>
+          <button class="carousel__indicator"></button>
+        </div>
+      </div>
     </div>
   </section>
 </body>

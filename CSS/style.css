@@ -23,7 +23,7 @@ body {
 }
 
 .logo-container {
-  width: 40%;
+  width: 27%;
   height: 86px;
   margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ body {
   background: #D22628;
   color: #FFFFFF;
   height: 100px;
-  padding: 10em;
+  padding: 1rem;
 }
 
 .menu {
@@ -62,12 +62,27 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
-  gap: 0;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: bolder;
   font-size: 6.5rem;
+}
+
+.donate {
+  background: #1D2944;
+}
+
+.menu li {
+  padding: 12px;
+}
+
+.menu li:hover {
+  background-color: #751e1e;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
 }
 
 .menu > a {
@@ -145,13 +160,13 @@ body {
     padding: 3em;
   }
   .logo-container {
-    width: 60%;
-    height: 46px;
+    width: 45%;
+    height: 28px;
     margin-bottom: 10px;
   }
   .logo-container .logo {
     width: 100%;
-    height: 100%;
+    height: 28px;
   }
   .menu-button-container {
     display: -webkit-box;
@@ -176,6 +191,13 @@ body {
             align-items: center;
     gap: 0;
   }
+  .menu li:hover {
+    background-color: #D22628;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
   #menu-toggle ~ .menu a {
     height: 0;
     width: 120px;
@@ -188,7 +210,7 @@ body {
   }
   #menu-toggle:checked ~ .menu a {
     border: none;
-    height: 32px;
+    height: 45px;
     width: 120px;
     font-size: 2.4rem;
     padding: 5px;
@@ -244,12 +266,20 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 75%;
+    gap: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu li:hover {
+    background-color: #D22628;
+    border-radius: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
   .menu-button {
     width: 50px;
@@ -405,6 +435,8 @@ main {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .main-agenda-container img:nth-child(1) {
     display: none;
@@ -488,48 +520,54 @@ body {
   height: -moz-min-content;
   height: min-content;
   text-align: center;
-  background-color: #D22628;
   color: #FFFFFF;
   padding: 28px 0 2px 0;
-  margin-top: 40px;
-}
-.shop-container h1 {
-  font-size: 2.4rem;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 28px;
-}
-.shop-container .t-shirt-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 28px;
-  padding: 0px 52px;
-  overflow: hidden;
-}
-.shop-container a {
-  text-decoration: none;
-}
-.shop-container .buy-button {
-  font-size: 1.8rem;
-  font-family: "Oswald", sans-serif;
-  color: #FFFFFF;
-  background-color: #1D2944;
-  width: 162px;
-  height: 35px;
-  margin: 40px auto;
+  margin-top: 10%;
 }
 
-@media (min-width: 768px) {
-  .shop-container h1 {
-    font-size: 3.8rem;
-  }
-  .shop-container .buy-button {
-    width: 300px;
-    height: 60px;
-    font-size: 2.8rem;
-  }
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel__track-container {
+  background-color: #D22628;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+}
+
+.carousel__button img {
+  width: 50px;
+  height: 50px;
 }

@@ -65,6 +65,7 @@ main {
     .main-agenda-container{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .main-agenda-container img:nth-child(1){
         display: none;
