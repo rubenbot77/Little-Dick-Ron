@@ -379,6 +379,11 @@ body {
   height: 211px;
 }
 
+.quotes {
+  width: auto;
+  height: 280px;
+}
+
 .text-container {
   color: #FFFFFF;
   width: 80%;

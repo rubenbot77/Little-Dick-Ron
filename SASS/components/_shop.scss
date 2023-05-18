@@ -1,15 +1,21 @@
 @import "_globals.scss";
 .shop-container{
     width: 100%;
-    height: min-content;
+    height: 900px;
     text-align: center;
     color: $color-terciario;
-    padding: 28px 0 2px 0;
-    margin-top: 10%;
+    margin-top: 120px;
+    padding: 25px;
+    background-color: $color-secunario;
+}
+.title {
+    font-size: 2.4rem;
+    font-family: $title;
+    margin-bottom: 20px;
 }
 .carousel {
     position: relative;
-    height: 600px;
+    height: 200px;
     width: 80%;
     margin: 0 auto;
 }
@@ -22,11 +28,15 @@
     background-color: $color-secunario;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .carousel__track{
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
 }
 .carousel__slide {
     position: absolute;
@@ -38,10 +48,170 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 50px;
-    width: 50px;
+    background: transparent;
+    border: 0;
 }
-.carousel__button img {
-    width: 50px;
-    height: 50px;
+
+.carousel__button--left{
+    left: -40px;
+    background-color: $color-primario;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.carousel__button--rigth{
+    right: -40px;
+    background-color: $color-primario;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.carousel__button img{
+    width: 13px;
+}
+
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10em;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0,0,0, .3);
+    cursor: pointer;
+}
+.carousel__indicator.current-slide{
+    background-color: $color-primario;
+    opacity: 70%;
+}
+
+
+
+.carousel2 {
+    position: relative;
+    height: 200px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.carousel__track-container2{
+    background-color: $color-secunario;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel__track2{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel__slide2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.carousel__button--left2{
+    left: -40px;
+    background-color: $color-primario;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.carousel__button--rigth2{
+    right: -40px;
+    background-color: $color-primario;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.carousel__nav2{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10em;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.carousel__indicator.current-slide2  {
+    background-color: $color-primario;
+    opacity: 70%;
+}
+
+
+
+.carousel3{
+    position: relative;
+    height: 200px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.carousel__track-container3{
+    background-color: $color-secunario;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel__track3{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel__slide3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.carousel__button--left3{
+    left: -40px;
+    background-color: $color-primario;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.carousel__button--rigth3{
+    right: -40px;
+    background-color: $color-primario;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.carousel__nav3{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10em;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.carousel__indicator.current-slide3 {
+    background-color: $color-primario;
+    opacity: 70%;
 }
