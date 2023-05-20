@@ -508,6 +508,26 @@ body {
   margin-bottom: 20px;
 }
 
+.buyhere__button {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buyhere__button span {
+  color: #FFFFFF;
+  background-color: #1D2944;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  width: 162px;
+  height: 35px;
+  margin-top: 50px;
+}
+
 .carousel {
   position: relative;
   height: 200px;
@@ -515,11 +535,46 @@ body {
   margin: 0 auto;
 }
 
+.inactive-span:hover {
+  position: absolute;
+  opacity: 100%;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 5.8rem;
+}
+
+.inactive-span {
+  position: absolute;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+}
+
+.inactive-span img {
+  width: 30%;
+}
+
 .carousel__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(77, 62, 62, 0.4);
+}
+
+.carousel__image:hover {
+  background-color: none;
 }
 
 .carousel__track-container {
@@ -602,7 +657,7 @@ body {
 }
 
 .carousel__indicator.current-slide {
-  background-color: #1D2944;
+  background-color: rgba(255, 243, 243, 0.6);
   opacity: 70%;
 }
 
@@ -671,7 +726,7 @@ body {
 }
 
 .carousel__indicator.current-slide2 {
-  background-color: #1D2944;
+  background-color: rgba(255, 243, 243, 0.6);
   opacity: 70%;
 }
 
@@ -740,6 +795,76 @@ body {
 }
 
 .carousel__indicator.current-slide3 {
-  background-color: #1D2944;
+  background-color: rgba(255, 243, 243, 0.6);
   opacity: 70%;
+}
+
+@media (min-width: 760px) {
+  .shop-container {
+    height: auto;
+  }
+  .title {
+    font-size: 3.8rem;
+  }
+  .carousel {
+    height: 400px;
+  }
+  .carousel2 {
+    height: 400px;
+  }
+  .carousel3 {
+    height: 400px;
+  }
+  .carousel__nav {
+    gap: 20em;
+  }
+  .carousel__nav2 {
+    gap: 20em;
+  }
+  .carousel__nav3 {
+    gap: 20em;
+  }
+  .carousel__indicator {
+    width: 15px;
+    height: 15px;
+  }
+  .buyhere__button span {
+    color: #FFFFFF;
+    background-color: #1D2944;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.8rem;
+    width: 262px;
+    height: 65px;
+    margin-top: 80px;
+  }
+}
+@media (min-width: 960px) {
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .carousel {
+    margin-top: 40px;
+    width: 25%;
+    height: 380px;
+  }
+  .carousel2 {
+    width: 25%;
+    height: 380px;
+  }
+  .carousel3 {
+    width: 25%;
+    height: 380px;
+  }
+  .carousel__indicator {
+    width: 12px;
+    height: 12px;
+  }
+  .buyhere__button span {
+    font-size: 3.8rem;
+  }
 }

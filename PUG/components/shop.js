@@ -58,12 +58,7 @@ dotsNav.addEventListener('click', e => {
 
 })
 
-
-
-
 //CAROUSEL 2
-
-
 const track2 = document.querySelector('.carousel__track2');
 const slides2 = Array.from(track2.children);
 const nextButton2 =  document.querySelector('.carousel__button--rigth2');
@@ -121,10 +116,7 @@ dotsNav2.addEventListener('click', e => {
     moveToSlide2(track2, currentSlide, targetSlide)
     updateDots2(currentDot, targetDot)
 })
-
-
 //CAROUSEL 3
-
 const track3 = document.querySelector('.carousel__track3');
 const slides3 = Array.from(track3.children);
 const nextButton3 =  document.querySelector('.carousel__button--rigth3');

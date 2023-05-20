@@ -1,102 +1,177 @@
 .shop-container
     h1.title SHOP
-    .carousel
-        button.carousel__button--left.carousel__button 
-            img(src="/assets/icons/Arrow 1.svg", alt="")        
-        .carousel__track-container
-            ul.carousel__track
-                li.carousel__slide.current-slide
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide
-                    img.carousel__image(src="https://i.postimg.cc/Kvrqct2w/tshirtB.png", alt="") 
-                li.carousel__slide
-                    img.carousel__image(src="https://i.postimg.cc/jSx8DCq5/tshirtC.png", alt="") 
-        button.carousel__button--rigth.carousel__button
-            img(src="/assets/icons/Arrow 2.svg", alt="")
+    .main-container 
+        .carousel
+            button.carousel__button--left.carousel__button 
+                img(src="/assets/icons/Arrow 1.svg", alt="")        
+            .carousel__track-container
+                ul.carousel__track
+                    li.carousel__slide.current-slide
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/4dmwJs7m/merch-1webp.webp", alt="black-tshirt")
+                    li.carousel__slide
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/nLd0bCLy/merch-4webp.webp", alt="red-tshirt") 
+                    li.carousel__slide
+                        a(href="")
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")     
+                            img.carousel__image(src="https://i.postimg.cc/dtKRf8B7/merch-22webp.webp", alt="blue-tshirt") 
+            button.carousel__button--rigth.carousel__button
+                img(src="/assets/icons/Arrow 2.svg", alt="")
 
-        .carousel__nav 
-            button.carousel__indicator.current-slide 
-            button.carousel__indicator 
-            button.carousel__indicator
-    .carousel2
-        button.carousel__button--left2.carousel__button
-            img(src="/assets/icons/Arrow 1.svg", alt="")        
-        .carousel__track-container2
-            ul.carousel__track2
-                li.carousel__slide2.current-slide2
-                    img.carousel__image(src="https://i.postimg.cc/jSx8DCq5/tshirtC.png", alt="") 
-                li.carousel__slide2
-                    img.carousel__image(src="https://i.postimg.cc/Kvrqct2w/tshirtB.png", alt="") 
-                li.carousel__slide2
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide2
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide2
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide2
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide2
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-        button.carousel__button--rigth2.carousel__button
-            img(src="/assets/icons/Arrow 2.svg", alt="")
+            .carousel__nav 
+                button.carousel__indicator.current-slide 
+                button.carousel__indicator 
+                button.carousel__indicator
+        .carousel2
+            button.carousel__button--left2.carousel__button
+                img(src="/assets/icons/Arrow 1.svg", alt="")        
+            .carousel__track-container2
+                ul.carousel__track2
+                    li.carousel__slide2.current-slide2
+                        a(href="")
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="") 
+                            img.carousel__image(src="https://i.postimg.cc/pX8GhW0j/merch-2.webp", alt="pink-hoodie") 
+                    li.carousel__slide2
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/3rzfx4Z7/merch-3.webp", alt="skyblue-hoddie") 
+                    li.carousel__slide2
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/ZqYVMrJP/merch-9.webp", alt="black-hoodie")
+                    li.carousel__slide2
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/4NzP48db/merch-14.webp", alt="blue-hoddie")
+                    li.carousel__slide2
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/sgscMpGF/merch-15.webp", alt="blue-hoodie")
+                    li.carousel__slide2
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/k55vcqyf/merch-17.webp", alt="darkblue-hoodie")
+                    li.carousel__slide2
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/CLHCpzPc/merch-24.webp", alt="blue-hoodie")
+            button.carousel__button--rigth2.carousel__button
+                img(src="/assets/icons/Arrow 2.svg", alt="")
 
-        .carousel__nav2 
-            button.carousel__indicator.current-slide2 
-            button.carousel__indicator 
-            button.carousel__indicator
-            button.carousel__indicator 
-            button.carousel__indicator 
-            button.carousel__indicator 
-            button.carousel__indicator 
-    .carousel3
-        button.carousel__button--left3.carousel__button
-            img(src="/assets/icons/Arrow 1.svg", alt="")        
-        .carousel__track-container3
-            ul.carousel__track3
-                li.carousel__slide3.current-slide3
-                    img.carousel__image(src="https://i.postimg.cc/jSx8DCq5/tshirtC.png", alt="") 
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/Kvrqct2w/tshirtB.png", alt="") 
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-                li.carousel__slide3
-                    img.carousel__image(src="https://i.postimg.cc/mk7dHHFc/tshirtA.png", alt="")
-        button.carousel__button--rigth3.carousel__button
-            img(src="/assets/icons/Arrow 2.svg", alt="")
+            .carousel__nav2 
+                button.carousel__indicator.current-slide2 
+                button.carousel__indicator 
+                button.carousel__indicator
+                button.carousel__indicator 
+                button.carousel__indicator 
+                button.carousel__indicator 
+                button.carousel__indicator 
+        .carousel3
+            button.carousel__button--left3.carousel__button
+                img(src="/assets/icons/Arrow 1.svg", alt="")        
+            .carousel__track-container3
+                ul.carousel__track3
+                    li.carousel__slide3.current-slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/PfCFHzY2/merch-5.webp", alt="black-cup")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/sg4TmnCD/merch-6.webp", alt="cloth bag") 
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/rwkh5BbP/merch-7.webp", alt="thermos") 
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/3WMGQHm5/merch-8.webp", alt="pink-cup")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/ZR2Hn2pj/merch-10.webp", alt="skyblue-cup")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/D0GgX6ch/merch-11.webp", alt="thermos")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/bYSLWYf5/merch-12.webp", alt="phone case with sticker")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/hPFMBFSt/merch-13.webp", alt="cloth-bag")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/Dw6cL81S/merch-16.webp", alt="phone case with sticker")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/N0P7CSJY/merch-18.webp", alt="phone case with sticker")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/zBbws76h/merch-19.webp", alt="sticker")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/1tk0s61j/merch-20.webp", alt="phone case with sticker")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/D01rZZ2y/merch-21.webp", alt="sticker")
+                    li.carousel__slide3
+                        a(href="") 
+                            span.inactive-span 
+                                img(src="/assets/icons/shopping-car 1.svg", alt="shopping car icon", srcset="")
+                            img.carousel__image(src="https://i.postimg.cc/VstB47jQ/merch-23.webp", alt="sticker")
+            button.carousel__button--rigth3.carousel__button
+                img(src="/assets/icons/Arrow 2.svg", alt="")
 
-        .carousel__nav3 
-            button.carousel__indicator.current-slide3 
-            button.carousel__indicator 
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
-            button.carousel__indicator
+            .carousel__nav3 
+                button.carousel__indicator.current-slide3 
+                button.carousel__indicator 
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+                button.carousel__indicator
+    a.buyhere__button(href="agenda.html")
+        span Buy here 
         script(src="/PUG/components/shop.js") 
