@@ -6,7 +6,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 .inactive{
     display: none;
@@ -22,6 +22,12 @@ main {
     margin-bottom: 50px;
     margin-top: 28px;
 }
+.main-agenda-container img:nth-child(1){
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 .agenda-main-link{
     text-decoration: none;
     margin: 0 auto;
@@ -35,9 +41,29 @@ main {
     width: 162px;
     height: 35px;
     padding: 0px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 50px auto 20px auto;
 }
+.read-more-button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #171b24;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: transform 200ms ease-in;
+  }
+  
+  .read-more-button::after{
+    transform: scaleX(0);
+    transform-origin:left;
+  }
+  
+  .read-more-button:hover::after{
+    transform: scaleX(1);
+    transform-origin:right;
+  }
 @media (min-width: 768px)and (max-width:959px){
     .title-bicolor{
         width: min-content;

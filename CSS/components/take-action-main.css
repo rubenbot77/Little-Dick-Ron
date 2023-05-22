@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1D2944;
+}
+
+.main_take__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  width: 100%;
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.main_take__action h1 {
+  color: #FFFFFF;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 50%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+#strong_character__action {
+  color: #D22628;
+}
+
+.main_take__action img {
+  width: 100%;
+  max-width: 843px;
+}
+
+.main_take__action p {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}

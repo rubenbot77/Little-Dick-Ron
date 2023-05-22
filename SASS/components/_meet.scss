@@ -1,0 +1,296 @@
+@import "_globals.scss";
+.main-background img{
+    width:100%;
+    height: 80%;
+    position:relative;
+    bottom: 0;
+    max-width: 487px;
+    top: 20%;
+}
+.main-background{
+    width: 50%;
+    display: flex;
+}
+
+.main-background{
+    background-image: url(https://i.postimg.cc/vBcF7hQs/main-background-littledic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    min-width:320px;
+    min-height: 306px;
+    -webkit-box-shadow: -1px 31px 16px -25px rgba(0,0,0,0.38);
+    -moz-box-shadow: -1px 31px 16px -25px rgba(0,0,0,0.38);
+    box-shadow: -1px 31px 16px -25px rgba(0,0,0,0.38); 
+}
+
+.first-title{
+    font-size: 2rem;
+    width:100%;
+    height: 50px;
+    padding-top:20px;
+    margin: 0 auto;
+    color: $color-terciario;
+    font-family: $title;
+    font-weight: 700;
+    text-align: center;
+}
+.first-title strong{
+    color: $color-secunario;
+    font-size: 2rem;
+}
+.section_meet__littledic__flex{
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 100%;
+    height:auto;
+    background-color: $color-primario;
+   
+
+}
+.meet__grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 50px;
+    position: relative;
+    grid-column-gap:15px;
+    grid-row-gap:15px;
+   
+}
+
+.meet__grid img{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+    min-width: 150px;
+    max-width: 180px;
+}
+.texts-1{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    gap: 10px;
+
+
+}
+.texts-1 h1:nth-of-type(1){
+    font-size: 2.4rem;
+    font-family: $title;
+    color: $color-terciario;
+    font-weight: 400;
+    
+
+}
+.texts-1 h1:nth-of-type(2){
+    font-size: 2.4rem;
+    font-family: 'Oswald', sans-serif;
+    color: $color-secunario;
+    font-weight: 700;
+
+}
+.texts-1 h1:nth-of-type(3){
+   
+    font-size: 2.4rem;
+    font-family: 'Oswald', sans-serif;
+    color: $color-terciario;
+    font-weight: 700;
+
+}
+
+.meet__grid iframe{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.agenda-main-link{
+    width: 100%;
+    text-decoration: none;
+  }
+.read-more-button2{
+    color: $color-terciario;
+    font-size: 1.8rem;
+    font-family: $title;
+    background-color: $color-secunario;
+    width: 162px;
+    height: 35px;
+    padding: 0px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .read-more-button2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #171b24;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: transform 200ms ease-in;
+  }
+  
+  .read-more-button2::after{
+    transform: scaleX(0);
+    transform-origin:left;
+  }
+  
+  .read-more-button2:hover::after{
+    transform: scaleX(1);
+    transform-origin:right;
+  }
+@media (min-width: 760px) {
+
+    .main-background h1{
+        font-size: 3.7rem;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .main-background img {
+        max-width:487px;
+    }
+    .first-title{
+        font-size: 3.7rem;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+    .first-title strong{
+        font-size: 3.7rem;
+    }
+
+    .texts-1 h1:nth-of-type(1){
+        font-size: 3.4rem;
+    }
+    .texts-1 h1:nth-of-type(2){
+        font-size: 3.4rem;
+    }
+    .texts-1 h1:nth-of-type(3){
+        font-size: 3.4rem;
+    }
+
+    .section_meet__littledic__flex button{
+        font-size: 2.3rem;
+        width: 180px;
+        height: 50px;  
+    }
+    .read-more-button2{
+        font-size: 2.8rem;
+        width: 300px;
+        height: 60px;
+        padding: 8px;
+      }
+}
+@media (min-width: 980px) {
+    .main-background{
+        background-image: url(https://i.postimg.cc/vBcF7hQs/main-background-littledic.jpg);
+        background-repeat: repeat;
+        background-size:contain;
+        width: 100%;
+        height: 55vh;
+        min-width:320px;
+        min-height: 306px;
+        -webkit-box-shadow: -1px 31px 16px -25px rgba(0,0,0,0.38);
+        -moz-box-shadow: -1px 31px 16px -25px rgba(0,0,0,0.38);
+        box-shadow: -1px 31px 16px -25px rgba(0,0,0,0.38); 
+    }
+    .main-background img{
+        width:100%;
+        height: 100%;
+        position:relative;
+        bottom: 0;
+        max-width: 487px;
+        top: 0%;
+    }
+
+    .first-title{
+        font-size: 4.7rem;
+        width: 450px;
+        position: relative;
+        right: -10%;
+        top: 50px;
+
+    }
+    .first-title strong{
+        font-size: 4.7rem;
+    }
+
+    .texts-1 h1:nth-of-type(1){
+        font-size: 3.4rem;
+    }
+    .texts-1 h1:nth-of-type(2){
+        font-size: 3.4rem;
+    }
+    .texts-1 h1:nth-of-type(3){
+        font-size: 3.4rem;
+    }
+    
+    .meet__grid img{
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+}   
+
+.meet__grid iframe{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 14;
+}
+
+.text-1{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.texts-1 h1:nth-of-type(1){
+    font-size: 3.7rem;
+
+}
+.texts-1 h1:nth-of-type(2){
+    font-size: 3.7rem;
+}
+.texts-1 h1:nth-of-type(3){
+    font-size: 3.7rem;
+}
+.about-us__button{
+    width: 180px;
+    height: 50px;
+    font-size: 2.7rem;
+    padding: 25px;
+}
+.read-more-button2{
+    color: $color-terciario;
+    font-size: 3.8rem;
+    font-family: $title;
+    background-color: $color-secunario;
+    width: 262px;
+    height: 65px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+}
+}

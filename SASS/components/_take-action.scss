@@ -1,0 +1,125 @@
+@import "_globals.scss";
+@import "_header.scss";
+@import "_footer.scss";
+.main-take-action__organitations-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+    padding: 4rem;
+}
+   
+.main-take-action__organitations-1 h1{
+    color: $color-terciario;
+    font-size: 2.4rem;
+    font-family: $title;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.5rem;
+    height: 80px;
+    margin: 60px auto 0px auto;
+}
+
+.main-take-action__organitations-1 h2 {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin: 10px 0 15px 0;
+    font-size: 2rem;
+    color:$color-terciario;
+    font-weight: 100;
+    font-family: $title;
+    
+  }
+
+
+.main-take-action__organitations-1 p {
+    color: $color-terciario;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.main-take-action__organitations-1 a{
+    color: #6a86f5;
+    text-decoration: underline;
+    font-size: inherit;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 1.8rem;
+}
+@media (min-width:760px) {
+    .main-container {
+        margin-top: 40px;
+    }
+    .image-container{
+        margin: 0 auto;
+    }
+    .text-container h1{
+        font-size: 4rem;
+    }
+    
+    .text-container h2 {       
+        font-size: 2.5rem;
+    }
+    
+    .text-container p {
+        font-size: 2.3rem;
+    }
+    .text-container p strong{
+        font-size: 2.3rem;
+    }
+      .text-container a{
+        font-size: 2.3rem;  
+    }
+      .text-container{
+        padding: 8rem;
+    }
+    .main-take-action__organitations-1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .main-take-action__organitations-1 h1{
+        font-size: 4rem;
+    }
+    
+    .main-take-action__organitations-1 h2 {
+        font-size: 2.5rem;
+      }
+    
+    .main-take-action__organitations-1 p {
+        font-size: 2.3rem;
+        
+      }
+      .main-take-action__organitations-1 a{
+       
+        font-size: 2.3rem;
+      }
+    
+      .main-take-action__organitations-1{
+        padding: 12rem;
+    }
+}
+@media (min-width: 960px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .main-take-action__organitations-1 h1{
+        font-size: 4.5rem;
+    }
+
+    .main-take-action__organitations-1 p {
+   
+        font-size: 2.7rem;
+        
+        
+      }
+      .main-take-action__organitations-1 a{
+       
+        font-size: 2.7rem;        
+        
+      }
+    
+      .main-take-action__organitations-1{
+        padding: 12rem;
+      }
+}
